@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f4f4f9;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.espoch.treeimplementation.controller.ArbolController">
+   <top>
+      <VBox spacing="10.0" style="-fx-padding: 20;">
+         <children>
+            <Label text="Visualizador de Árbol Binario">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <HBox spacing="10.0">
+               <children>
+                  <TextField fx:id="txtValor" promptText="Ingrese un entero" style="-fx-background-radius: 5;" />
+                  <Button mnemonicParsing="false" onAction="#onAgregar" style="-fx-background-color: #27ae60; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Agregar" />
+                  <Button mnemonicParsing="false" onAction="#onEliminar" style="-fx-background-color: #c0392b; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Eliminar" />
+                  <Button mnemonicParsing="false" onAction="#onLimpiar" style="-fx-background-color: #f39c12; -fx-text-fill: white; -fx-font-weight: bold; -fx-background-radius: 5;" text="Limpiar" />
+               </children>
+            </HBox>
+            <Label fx:id="lblMensaje" textFill="#ffeb3b">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <center>
+      <ScrollPane fx:id="scrollPane" hbarPolicy="AS_NEEDED" style="-fx-background-color: transparent;" vbarPolicy="AS_NEEDED">
+         <content>
+            <StackPane fx:id="canvasContainer" style="-fx-background-color: white;">
+               <children>
+                  <Canvas fx:id="canvas" />
+               </children>
+            </StackPane>
+         </content>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </ScrollPane>
+   </center>
+</BorderPane>
