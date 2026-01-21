@@ -8,9 +8,9 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #f4f4f9;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.espoch.treeimplementation.controller.ArbolController">
    <top>
-      <VBox spacing="10.0" style="-fx-padding: 20;">
+      <VBox spacing="10.0" style="-fx-padding: 20; -fx-background-color: blue;">
          <children>
-            <Label text="Visualizador de Árbol Binario">
+            <Label text="Árbol Binario">
                <font>
                   <Font name="System Bold" size="24.0" />
                </font>
